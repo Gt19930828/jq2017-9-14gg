@@ -1,0 +1,51 @@
+<!--左侧边栏-->
+
+<div class="aside">
+	<div class="new">
+		<a href="#">评论赢积分<span></span></a>
+	</div>
+	<div class="partNav">
+		<ul class="nav">
+			<script id="nav" type="text/html">
+				{{each navList as value}}
+				<li>
+					<a href="{{value.link}}">{{value.title}}</a>
+				</li>
+				{{/each}}
+			</script>
+		</ul>
+		<div class="nav_title_list">
+			<script id="navCon" type="text/html">
+				<div class="list_title">
+					{{each recom as value}}
+					<a href="{{value.link}}">{{value.tit}}</a>
+					{{/each}}
+				</div>
+				<ul class="list_content ">
+					{{each subNavLists as value1}}
+					<li class="clear">
+						<dt>{{value1.subNavTit}}<span>&gt;</span></dt>
+						<dd>
+							{{each value1.subNavList as value11}}
+							<a href="html/index.html">{{value11}}</a>
+							{{/each}}
+						</dd>
+					</li>
+					{{/each}}
+				</ul>
+			</script>
+		</div>
+	</div>
+
+	<ul class="event">
+		<li>
+			<a href="#">明星赞助</a>
+		</li>
+		<li>
+			<a href="#">专题&amp;活动</a>
+		</li>
+	</ul>
+	<div class="ad">
+		<a href="#"><img src="img/ad_f.jpg"> </a>
+	</div>
+</div>
